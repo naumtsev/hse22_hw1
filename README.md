@@ -102,11 +102,13 @@ platanus assemble -f oil-pair1.fastq.trimmed oil-pair1.fastq.trimmed
 Анализ полученных контигов:
 
 ```python
-{'contig_count': 1469,
- 'max_contig': 'seq374_len58306_cov224',
- 'max_contig_size': 58306,
- 'N50': 'seq393_len11527_cov224',
- 'N50_size': 11527}
+{
+    'contig_count': 1469,
+    'max_contig': 'seq374_len58306_cov224',
+    'max_contig_size': 58306,
+    'N50': 'seq393_len11527_cov224',
+    'N50_size': 11527
+ }
 ```
 
 
@@ -125,17 +127,21 @@ platanus scaffold -c out_contig.fa -IP1 oil-pair1.fastq.trimmed oil-pair2.fastq.
 Анализ полученных скаффолдов:
 
 ```python
-{'scaffold_count': 130,
- 'max_scaffold': 'scaffold4_len383647_cov236',
- 'max_scaffold_size': 383647,
- 'N50': 'scaffold70_len173419_cov224',
- 'N50_size': 173419}
+{
+    'scaffold_count': 130,
+    'max_scaffold': 'scaffold4_len383647_cov236',
+    'max_scaffold_size': 383647,
+    'N50': 'scaffold70_len173419_cov224',
+    'N50_size': 173419
+}
 ```
 
 Анализ самого большого скаффолда
 
 ```python
-{'sum_gap_size': 103, 'gap_count': 5}
+{
+    'sum_gap_size': 103, 'gap_count': 5
+}
 
 ```
 
@@ -155,16 +161,20 @@ platanus gap_close -c out_scaffold.fa -IP1 oil-pair1.fastq.trimmed oil-pair2.fas
 Анализ полученных скаффолдов:
 
 ```python
-{'scaffold_count': 130,
- 'max_scaffold': 'scaffold4_cov236',
- 'max_scaffold_size': 383574,
- 'N50': 'scaffold70_cov224',
- 'N50_size': 173397}
+{
+    'scaffold_count': 130,
+    'max_scaffold': 'scaffold4_cov236',
+    'max_scaffold_size': 383574,
+    'N50': 'scaffold70_cov224',
+    'N50_size': 173397
+ }
 ```
 
 Анализ самого большого скаффолда
 
 ```python
-{'sum_gap_size': 0, 'gap_count': 0}
+{
+    'sum_gap_size': 0, 'gap_count': 0
+}
 ```
 
